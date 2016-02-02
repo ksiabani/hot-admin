@@ -14,7 +14,7 @@
 
     var config = {
         appErrorPrefix: '[hotAdmin Error] ',
-        appTitle: 'hotAdmin'
+        appTitle: 'Hot Admin'
     };
 
     core.value('config', config);
