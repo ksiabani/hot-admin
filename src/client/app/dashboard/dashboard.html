@@ -1,71 +1,121 @@
-<section id="dashboard-view" class="mainbar">
-    <section class="matter">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="today-datas">
-                        <li class="blightblue">
-                            <div class="pull-left"><i class="fa fa-plane"></i></div>
-                            <div class="datas-text pull-right">
-                                <span class="bold">May 18 - 19, 2015</span> Castle Resort, Neverland
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
+<!--<section id="dashboard-view" class="mainbar">-->
+    <!--<section class="matter">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<ul class="today-datas">-->
+                        <!--<li class="blightblue">-->
+                            <!--<div class="pull-left"><i class="fa fa-plane"></i></div>-->
+                            <!--<div class="datas-text pull-right">-->
+                                <!--<span class="bold">May 18 - 19, 2015</span> Castle Resort, Neverland-->
+                            <!--</div>-->
+                            <!--<div class="clearfix"></div>-->
+                        <!--</li>-->
 
-                        <li class="borange">
-                            <div class="pull-left"><i class="fa fa-envelope"></i></div>
-                            <div class="datas-text pull-right">
-                                <span class="bold">{{vm.messageCount}}</span> Messages
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
+                        <!--<li class="borange">-->
+                            <!--<div class="pull-left"><i class="fa fa-envelope"></i></div>-->
+                            <!--<div class="datas-text pull-right">-->
+                                <!--<span class="bold">{{vm.messageCount}}</span> Messages-->
+                            <!--</div>-->
+                            <!--<div class="clearfix"></div>-->
+                        <!--</li>-->
 
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="widget wviolet">
-                        <div ht-widget-header title="People"
-                             allow-collapse="true"></div>
-                        <div class="widget-content text-center text-info">
-                            <table class="table table-condensed table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Age</th>
-                                        <th>Location</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="p in vm.people">
-                                        <td>{{p.firstName}}</td>
-                                        <td>{{p.lastName}}</td>
-                                        <td>{{p.age}}</td>
-                                        <td>{{p.location}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="widget-foot">
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="widget wgreen">
-                        <div ht-widget-header title="{{vm.news.title}}"
-                             allow-collapse="true"></div>
-                        <div class="widget-content text-center text-info">
-                            <small>{{vm.news.description}}</small>
-                        </div>
-                        <div class="widget-foot">
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-6">-->
+                    <!--<div class="widget wviolet">-->
+                        <!--<div ht-widget-header title="People"-->
+                             <!--allow-collapse="true"></div>-->
+                        <!--<div class="widget-content text-center text-info">-->
+                            <!--<table class="table table-condensed table-striped">-->
+                                <!--<thead>-->
+                                    <!--<tr>-->
+                                        <!--<th>First Name</th>-->
+                                        <!--<th>Last Name</th>-->
+                                        <!--<th>Age</th>-->
+                                        <!--<th>Location</th>-->
+                                    <!--</tr>-->
+                                <!--</thead>-->
+                                <!--<tbody>-->
+                                    <!--<tr ng-repeat="p in vm.people">-->
+                                        <!--<td>{{p.firstName}}</td>-->
+                                        <!--<td>{{p.lastName}}</td>-->
+                                        <!--<td>{{p.age}}</td>-->
+                                        <!--<td>{{p.location}}</td>-->
+                                    <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</div>-->
+                        <!--<div class="widget-foot">-->
+                            <!--<div class="clearfix"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+                    <!--<div class="widget wgreen">-->
+                        <!--<div ht-widget-header title="{{vm.news.title}}"-->
+                             <!--allow-collapse="true"></div>-->
+                        <!--<div class="widget-content text-center text-info">-->
+                            <!--<small>{{vm.news.description}}</small>-->
+                        <!--</div>-->
+                        <!--<div class="widget-foot">-->
+                            <!--<div class="clearfix"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+<!--</section>-->
+
+<div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
         </div>
-    </section>
-</section>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+
+        <stat number="6" comments="New comments!" colour="primary" type="comments"></stat>
+        <stat number="12" comments="New tasks!" colour="primary" type="user"></stat>
+        <stat number="18" comments="New orders!" colour="yellow" type="shopping-cart"></stat>
+        <stat number="24" comments="Support tickets!" colour="red" type="support"></stat>
+
+    </div>
+
+    <!-- /.panel -->
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                </div>
+                <!-- /.panel-heading -->
+                <timeline></timeline>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                </div>
+                <!-- /.panel-heading -->
+                <notifications></notifications>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+
+            <chat></chat>
+            <!-- /.panel .chat-panel -->
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+</div>
